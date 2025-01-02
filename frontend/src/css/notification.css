@@ -1,0 +1,79 @@
+.notifications-container {
+  position: relative;
+}
+
+.notifications-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #000;
+}
+
+.notification-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #f00;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.notifications-dropdown {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  padding: 10px;
+  z-index: 10;
+}
+
+.notifications-dropdown ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.notifications-dropdown li {
+  padding: 10px;
+  margin: 5px 0;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.notifications-dropdown li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Style for unread notifications */
+.notifications-dropdown li.unread {
+  background-color: #f9f9f9;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Style for read notifications */
+.notifications-dropdown li.read {
+  background-color: #e0e0e0;
+  color: #888;
+}
+
+/* Button to mark all notifications as read */
+.clear-notifications {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.clear-notifications:hover {
+  background-color: #0056b3;
+}

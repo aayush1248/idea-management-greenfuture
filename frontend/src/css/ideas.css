@@ -1,0 +1,61 @@
+.ideas-container {
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.ideas-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.idea-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.idea-content {
+  flex: 1;
+}
+
+.idea-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.confirm-btn {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.confirm-btn:hover {
+  background-color: darkgreen;
+}
+
+.delete-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: darkred;
+}

@@ -1,0 +1,199 @@
+Global styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply the full-page background image */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  background-image: url('D:/react_assignment/react_project/src/assets/greenfuture.jpg'); /* Replace with the correct path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #f0f8f5; /* Light text for better contrast */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.dashboard-container {
+  flex-grow: 3;
+  background-color: rgba(0, 0, 0, 0.4); /* Add a subtle overlay */
+  padding: 20px;
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 15px 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(44, 107, 54, 0.9); /* Green with transparency */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.navbar-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #f4fff1;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Buttons */
+.logout-btn,
+.Ideas,
+.IdeasConfirm {
+  background-color: #3B8740; /* Rich green for buttons */
+  color: white;
+  padding: 14px 22px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.logout-btn:hover,
+.Ideas:hover,
+.IdeasConfirm:hover {
+  background-color: #2C6B36;
+  transform: translateY(-2px); /* Adds a subtle pop effect */
+}
+
+.logout-btn:active,
+.Ideas:active,
+.IdeasConfirm:active {
+  transform: translateY(0);
+}
+
+/* Form container styling */
+.form-container {
+  max-width: 500px;
+  margin: 50px auto;
+  background-color: rgba(144, 236, 160, 0.8); /* Transparent green overlay */
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #301515;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 14px;
+  border: 2px solid #ffffff;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.9);
+  font-size: 1rem;
+  color: #000000;
+}
+
+input[type="text"]:focus {
+  border-color: #78ff81; /* Green border on focus */
+  outline: none;
+}
+
+/* Submit buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 28px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+  background-color: #3B8740;
+  transform: translateY(-2px);
+}
+
+button:disabled {
+  background-color: #8FBC8F;
+  cursor: not-allowed;
+}
+
+/* Modal styling */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+
+.modal-container {
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.modal-container h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.modal-container button {
+  background-color: #3B8740;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-container button:hover {
+  background-color: #2C6B36;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .navbar-title {
+    font-size: 1.8rem;
+  }
+
+  .form-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  button {
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
+}

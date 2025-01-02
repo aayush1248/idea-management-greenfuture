@@ -1,0 +1,33 @@
+/* body {
+  background-color: #f0f2f5;
+  font-family: 'Arial', sans-serif;
+}
+
+.card {
+  border-radius: 10px;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.btn {
+  border-radius: 25px;
+}
+
+.alert {
+  border-radius: 8px;
+} */
+/* Basic Reset */
+
+/* You can add any custom styling here if you need additional tweaks */
+
+/* Body Background */
+body {
+  background-color:#f4fcfb;
+}
+
+/* Optional: Shadow Effect for the Card */
+.card {
+  border-radius: 20px;
+}
